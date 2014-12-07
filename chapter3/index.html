@@ -103,6 +103,136 @@
 				<li> <a href="#">Activity</a> </li>
 				<li> <a href="#">Liked Pages</a> </li>
 			</ul>
+			<!--NAV BAR-->
+			<div class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar-content">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Facebook</a>
+					</div>					
+					<div class="collapse navbar-collapse" id="mynavbar-content">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Business</a></li>
+							<li><a href="#">Service</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">About Us</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Team <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Board of Members</a></li>
+									<li><a href="#">Developers Team</a></li>
+									<li><a href="#">Designing Team</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Investors</a></li>
+									<li><a href="#">Share holders</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--BREADCRUMB-->
+			<ul class="breadcrumb">
+				<li>Employee</li>
+				<li>Senior</li>
+				<li>Software Engineer</li>
+			</ul>
+			<!--LABEL-->
+			<h3>Introduction to Bootstrap 3 <span class="label label-info">New</span></h3>
+			<!--GLYPHICON-->
+			<span class="glyphicon glyphicon-heart"></span>
+			<!--WELL-->
+			<div class="well well-lg">
+				Include the fonts Copy over all the font files to a /fonts directory near your CSS.
+
+				Include the CSS or LESS You have two options for enabling the fonts in your project: vanilla CSS or source LESS. For vanilla CSS, just include the compiled CSS file from the /css in the repository.
+				For LESS, copy over the .less files from /less into your existing Bootstrap directory. Then import it into bootstrap.less via @import "bootstrap-glyphicons.less";. Recompile when ready.
+				Add some icons! After you've added the fonts and CSS, you can get to using the icons. For example,....
+			</div>
+			<!--BADGES-->
+			<span class="badge">52</span>
+			<!--FORM-->
+			<div class="well">
+				<!--form class="form">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input class="form-control" type="text" id="name" placeholder="Your full name" />
+					</div>
+					<div class="from-group">
+						<label for="email">Email:</label>
+						<input class="form-control" type="text" id="email" placeholder="Your email address" />
+					</div>
+					<button class="btn btn-primary" type="submit">Submit</button>
+					<button class="btn btn-default" type="reset">Clear</button>
+				</form-->
+			</div>
+			<!--HORIZONTAL FORM-->
+			<div class="well">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-xs-2" for="name">Name:</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="text" id="name1" placeholder="Your full name" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-2" for="email">Email:</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="text" id="email1" placeholder="Your email address" />
+						</div>
+					</div>
+					<button class="btn btn-primary" type="submit">Submit</button>
+					<button class="btn btn-default" type="reset">Clear</button>
+				</form>
+			</div>
+			<!--INLINE FORM-->
+			<div class="well well-sm">
+				<form class="form-inline">
+					<div class="form-group">												
+						<input class="form-control" type="text" id="name1" placeholder="Your full name" />						
+					</div>
+					<div class="form-group">					
+						<input class="form-control" type="text" id="email1" placeholder="Your email address" />
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox"/>Remember me</label>
+					</div>
+					<button class="btn btn-primary" type="submit">Submit</button>
+					<button class="btn btn-default" type="reset">Clear</button>
+				</form>
+			</div>
+			<!--DISABLED-->
+			<input class="form-control" type="text" placeholder="Disabled field" disabled />
+			<div class="well">
+				<form class="form-horizontal">
+					<div class="form-group has-success">
+						<label class="col-xs-2 control-label" for="name1">Name:</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="text" id="name1" placeholder="Your full name" />
+						</div>
+					</div>
+					<div class="form-group has-warning">
+						<label class="col-xs-2 control-label" for="email1">Email:</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="text" id="email1" placeholder="Your email address" />
+						</div>
+					</div>
+					<div class="form-group has-error">
+						<label class="col-xs-2 control-label" for="email2">Office Email:</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="text" id="email2" placeholder="Your official email address" />
+							<span class="help-block">Email given by office</span>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
