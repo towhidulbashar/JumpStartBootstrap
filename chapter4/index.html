@@ -5,6 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	</head>
 	<body>
+		<!--DROPDOWN-->
 		<div class="container">	
 			<ul class="nav nav-pills">
 				<li class="active"><a href="#">Home</a></li>
@@ -19,7 +20,46 @@
 				<li><a href="#">Message</a></li>
 			</ul>
 		</div>
+		<!--Dropdowns with JavaScript-->
+		<div class="dropdown" id="myDropdown">
+			<a href="#" id="myDropdownHandle" data-toggle="dropdown" data-target="#">Employee</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Parmenent</a></li>
+				<li><a href="#">Trainee</a></li>
+			</ul>
+		</div>
+		<!--Alert Message-->
+		<div class="alert alert-success alert-dismissable" id="myAlert">
+			<button type="button" class="close" data-dismiss="alert">&times</button>
+			Transaction completed. Go to <a class="alert-link" href="#">account page</a>.
+		</div>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//Dropdowns with JavaScript
+				$('#myDropdownHandle').dropdown('toggle');
+				$('#myDropdown').on('show.bs.dropdown', function() {
+					console.log('show...');
+				});
+				$('#myDropdown').on('shown.bs.dropdown', function() {
+					console.log('shown...');
+				});
+				$('#myDropdown').on('hide.bs.dropdown', function() {
+					console.log('hide...');
+				});
+				$('#myDropdown').on('hidden.bs.dropdown', function() {
+					console.log('hidden...');
+				});
+
+				//Alert Message
+				$('#myAlert').on('close.bs.alert', function() {
+					console.log('close alert');
+				});
+				$('#myAlert').on('closed.bs.alert', function() {
+					console.log('closed alert');
+				});
+			});			
+		</script>
 	</body>
 </html>
