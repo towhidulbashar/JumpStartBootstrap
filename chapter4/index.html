@@ -33,6 +33,21 @@
 			<button type="button" class="close" data-dismiss="alert">&times</button>
 			Transaction completed. Go to <a class="alert-link" href="#">account page</a>.
 		</div>
+		<!--Buttons-->
+		<button class="btn btn-default" data-toggle="button" type="button">Toggle Me!</button>
+		<div class="btn-group" data-toggle="buttons">
+			<label class="btn btn-default"><input type="checkbox" name="option" />Option1</label>
+			<label class="btn btn-default"><input type="checkbox" name="option" />Option2</label>
+			<label class="btn btn-default"><input type="checkbox" name="option" />Option3</label>
+		</div>
+		<div class="btn-group" data-toggle="buttons">
+			<label class="btn btn-default"><input type="radio" name="option" />Male</label>
+			<label class="btn btn-default"><input type="radio" name="option" />Female</label>
+			<label class="btn btn-default"><input type="radio" name="option" />Shemale</label>
+		</div>
+		<button id="myLoadingButton" type="button" class="btn btn-primary" data-loading-text="Loading stuff...">Loading Data</button>
+
+
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
 		<script type="text/javascript">
@@ -59,6 +74,10 @@
 				$('#myAlert').on('closed.bs.alert', function() {
 					console.log('closed alert');
 				});
+
+				//Button
+				$('#myLoadingButton').click(function () { $(this).button('Loading'); });
+
 			});			
 		</script>
 	</body>
