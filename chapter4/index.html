@@ -3,6 +3,14 @@
 	<head>
 		<title>Chapter 4: Bootstrap Plugin</title>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<style type="text/css">
+			.scrollspy-example{
+				position:relative;
+				height:200px;
+				margin-top:10px;
+				overflow:auto;
+			}
+		</style>
 	</head>
 	<body>
 		<!--DROPDOWN-->
@@ -46,8 +54,62 @@
 			<label class="btn btn-default"><input type="radio" name="option" />Shemale</label>
 		</div>
 		<button id="myLoadingButton" type="button" class="btn btn-primary" data-loading-text="Loading stuff...">Loading Data</button>
+		<!--ScrollSpy--> <hr/>
+		<nav id="navbarExample" class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
+						<!--Why these spans are here?-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">My Site</a>
+				</div>
+				<div class="collapse navbar-collapse navbarLinks">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+						<li><a href="#map">Map</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
+			<h4 id="home">Home</h4>
+			<p>Bangladesh has moved one major step closer towards the advanced science and technology through signing an international co-operation agreement with CERN, the European organisation for nuclear research, in Geneva.				
+			</p>
 
+			<h4 id="about">About</h4>
+			<p>To bolster bilateral energy ties, Bangladesh has suggested setting up of a thermal power plant through a joint venture in India, reports The Economic Times.
+				In this regard, Bangladesh has proposed that a coal block could be allocated to the joint venture entity while power generated from the plant could be supplied to Bangladesh.
+			</p>
 
+			<h4 id="contact">Contact Us</h4>
+			<p>To bolster bilateral energy ties, Bangladesh has suggested setting up of a thermal power plant through a joint venture in India, reports The Economic Times.
+				In this regard, Bangladesh has proposed that a coal block could be allocated to the joint venture entity while power generated from the plant could be supplied to Bangladesh.
+			</p>
+
+			<h4 id="map">Map</h4>
+			<p>To bolster bilateral energy ties, Bangladesh has suggested setting up of a thermal power plant through a joint venture in India, reports The Economic Times.
+				In this regard, Bangladesh has proposed that a coal block could be allocated to the joint venture entity while power generated from the plant could be supplied to Bangladesh.
+				M Shameem Ahsan, ambassador and Permanent Representative of Bangladesh in Geneva, Switzerland yesterday signed the instrument of cooperation on behalf of Bangladesh government with Dr Rolf Heuer, director general of CERN, according to a press release of External Publicity Wing of Ministry of Foreign Affairs in Dhaka.
+			</p>
+		</div>
+		<!--Tabs-->
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#home1" data-toggle="tab">Home</a></li>
+			<li><a href="#about1" data-toggle="tab" id="navAbout">About</a></li>
+			<li><a href="#settings1" data-toggle="tab">Settings</a></li>
+			<li><a href="#contact1" data-toggle="tab">Contact</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="home1"><h3>My Home</h3></div>
+			<div class="tab-pane fade" id="about1"><h3>About you</h3></div>
+			<div class="tab-pane fade" id="settings1"><h3>All settings</h3></div>
+			<div class="tab-pane fade" id="contact1"><h3>Contacts here</h3></div>
+		</div>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
 		<script type="text/javascript">
@@ -78,6 +140,13 @@
 				//Button
 				$('#myLoadingButton').click(function () { $(this).button('Loading'); });
 
+				//Tabs
+				$('#navAbout').on('show.bs.tab', function() {
+					console.log('show.bs.tab ...');
+				});
+				$('#navAbout').on('shown.bs.tab', function() {
+					console.log('shown.bs.tab ...');
+				});
 			});			
 		</script>
 	</body>
