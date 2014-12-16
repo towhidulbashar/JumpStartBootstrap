@@ -189,6 +189,24 @@
 				$('#navAbout').on('shown.bs.tab', function() {
 					console.log('shown.bs.tab ...');
 				});
+
+				//Collapse
+				//$('.collapse').collapse({toggle: false});
+				//$('.collapse').collapse('toggle');
+				//$('.collapse').collapse('show');
+				//$('.collapse').collapse('hide');
+				$('.collapse').on('show.bs.collapse', function() {
+					console.log('show.bs.collapse');
+				});
+				$('.collapse').on('shown.bs.collapse', function() {
+					console.log('shown.bs.collapse');
+				});
+				$('.collapse').on('hide.bs.collapse', function() {
+					console.log('hide.bs.collapse');
+				});
+				$('.collapse').on('hidden.bs.collapse', function() {
+					console.log('hidden.bs.collapse');
+				});
 			});			
 		</script>
 	</body>
