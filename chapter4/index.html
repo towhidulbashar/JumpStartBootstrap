@@ -151,6 +151,9 @@
 					</div>
 				</div>
 			</div>
+			<!--Tooltip-->
+			<hr/>
+			<button id="tooltipButton" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" data-title="Click and save something">Save</button>
 		</div>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
@@ -207,6 +210,10 @@
 				$('.collapse').on('hidden.bs.collapse', function() {
 					console.log('hidden.bs.collapse');
 				});
+
+				//Tooltip
+				var option = {animation: true};
+				$('#tooltipButton').tooltip(option);
 			});			
 		</script>
 	</body>
