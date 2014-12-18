@@ -154,6 +154,9 @@
 			<!--Tooltip-->
 			<hr/>
 			<button id="tooltipButton" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" data-title="Click and save something">Save</button>
+			<!--Popover-->
+			<hr/>
+			<button id="popoverButton" type="button" class="btn btn-default" data-toggle="popover" data-placement="top" data-content="I'm a popover content" data-title="I'm title">Save</button>
 		</div>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
@@ -214,6 +217,9 @@
 				//Tooltip
 				var option = {animation: true};
 				$('#tooltipButton').tooltip(option);
+
+				//Popover
+				$('#popoverButton').popover();
 			});			
 		</script>
 	</body>
