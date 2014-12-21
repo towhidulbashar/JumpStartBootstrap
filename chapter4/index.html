@@ -157,6 +157,61 @@
 			<!--Popover-->
 			<hr/>
 			<button id="popoverButton" type="button" class="btn btn-default" data-toggle="popover" data-placement="top" data-content="I'm a popover content" data-title="I'm title">Save</button>
+			<!--Carousel-->
+			<div id="laptopCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#laptopCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#laptopCarousel" data-slide-to="1" ></li>
+					<li data-target="#laptopCarousel" data-slide-to="2" ></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="alineware1.jpg">
+						<div class="carousel-caption">
+							<p color="black">ALIENWARE 13
+								Upgrade to the Full HD anti-glare display and 16GB RAM to give you the visual clarity and gaming performance you have been craving.
+								Save $50 with coupon code T$VTLCJNZ37MC8
+
+								FEATURED OPTIONS:
+								4th Gen Intel® Core™ i5-4210U Processor
+								16GB Dual Channel DDR3L at 1600MHz
+								NVIDIA® GeForce® GTX 860M with 2GB GDDR5
+								1TB 5400RPM SATA 6Gb/s
+								PRICE: $1,299
+								SAVINGS: $200
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="ibm1.jpg">
+						<div class="carousel-caption">
+							<p>ALIENWARE 13
+								Upgrade to the Full HD anti-glare display and 16GB RAM to give you the visual clarity and gaming performance you have been craving.
+								Save $50 with coupon code T$VTLCJNZ37MC8
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="xmg1.jpg">
+						<div class="carousel-caption">
+							<p>FEATURED OPTIONS:
+								4th Gen Intel® Core™ i5-4210U Processor
+								16GB Dual Channel DDR3L at 1600MHz
+								NVIDIA® GeForce® GTX 860M with 2GB GDDR5
+								1TB 5400RPM SATA 6Gb/s
+								PRICE: $1,299
+								SAVINGS: $200
+							</p>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control left" href="#laptopCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="carousel-control right" href="#laptopCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
 		</div>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
@@ -219,7 +274,12 @@
 				$('#tooltipButton').tooltip(option);
 
 				//Popover
-				$('#popoverButton').popover();
+				var optionPopover = {animation: true, placement: 'right'};
+				$('#popoverButton').popover(optionPopover);
+
+				//Carousel
+				var carouselOption = {interval: 1500, pause: 'hover', wrap: true};
+				$('#laptopCarousel').carousel(carouselOption);
 			});			
 		</script>
 	</body>
