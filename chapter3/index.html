@@ -6,6 +6,38 @@
 	</head>
 	<body>
 		<div class="container">
+			<!--Chapter Link-->
+			<div>
+				<a href="#" class="disabled">Chapter 1: Up, Close, and Personal with Bootstrap</a>
+				<p>
+					This chapter contains introduction to Bootstrap and how to make a page ready to use Bootstrap.</p>
+			</div>
+			<div>
+				<a href="../chapter2/index.html">Chapter 2: Bootstrap Grid System</a>
+				<p>
+					Chapter two mainly focuses on how to build responsive grid layout.</p>
+			</div>
+			<div>
+				<a href="index.html">Chapter 3: Exploring Bootstrap Components</a>
+				<p>
+					In this chapter I've learn how to build page components that we use frequently in our html pages. I've learned how to play with 'standing out' components. And how to make 'form control' beautiful.</p>
+			</div>
+			<div>
+				<a href="../chapter4/index.html">Chapter 4: Bootstrap Plugins for Fun and Profit</a>
+				<p>
+					This chapter described how to add functionality to various components, and how to utilize different kind of events emitted by bootstrap plugins and controls.</p>
+			</div>
+			<div>
+				<a href="../chapter5/index.html">Chapter 5: Diving Deep: Customizing Bootstrap</a>
+				<p>
+					How to customized the bootstrap framework without changing the main CSS file.</p>
+			</div>
+			<div>
+				<a href="#" class="disabled">Chapter 6: Optimizing Bootstrap</a>
+				<p>
+					How to use some techniques (e.g., minification) improve the performance.</p>
+			</div>
+
 			<div class="page-heade">
 				<h1>Chapter 3 <small>Exploring Bootstrap Components</small></h1>
 			</div>
@@ -236,5 +268,10 @@
 		</div>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		script type="text/javascript">
+		$('.disabled').on('click', function(e){
+			e.preventDefault(); 
+		});
+	</script>
 	</body>
 </html>

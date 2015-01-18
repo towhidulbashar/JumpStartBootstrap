@@ -14,24 +14,48 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col1">
-			 <h4>Column 1</h4>
-			</div>
-			<div class="col-xs-12 col-sm-6 col2"> 
-			 <h4>Column 2</h4>
-			</div>
+		<div class="well well-lg header-margin">
+			Jumpstart Bootstrap is an awesome book to learn Bootstarp. I build this site while I was reading this book. This site contains only some controls made using Bootstrap.
 		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col3">
-			 <h4>Column 3</h4>
-			</div>
-			<div class="col-xs-12 col-sm-6 col4"> 
-			 <h4>Column 4</h4>
-			</div>
+		<!--Chapter Link-->
+		<div>
+			<a href="#" class="disabled">Chapter 1: Up, Close, and Personal with Bootstrap</a>
+			<p>
+				This chapter contains introduction to Bootstrap and how to make a page ready to use Bootstrap.</p>
 		</div>
+		<div>
+			<a href="chapter2/index.html">Chapter 2: Bootstrap Grid System</a>
+			<p>
+				Chapter two mainly focuses on how to build responsive grid layout.</p>
+		</div>
+		<div>
+			<a href="chapter3/index.html">Chapter 3: Exploring Bootstrap Components</a>
+			<p>
+				In this chapter I've learn how to build page components that we use frequently in our html pages. I've learned how to play with 'standing out' components. And how to make 'form control' beautiful.</p>
+		</div>
+		<div>
+			<a href="chapter4/index.html">Chapter 4: Bootstrap Plugins for Fun and Profit</a>
+			<p>
+				This chapter described how to add functionality to various components, and how to utilize different kind of events emitted by bootstrap plugins and controls.</p>
+		</div>
+		<div>
+			<a href="chapter5/index.html">Chapter 5: Diving Deep: Customizing Bootstrap</a>
+			<p>
+				How to customized the bootstrap framework without changing the main CSS file.</p>
+		</div>
+		<div>
+			<a href="" class="disabled">Chapter 6: Optimizing Bootstrap</a>
+			<p>
+				How to use some techniques (e.g., minification) improve the performance.</p>
+		</div>		
+
 	</div>
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$('.disabled').on('click', function(e){
+			e.preventDefault(); 
+		});
+	</script>
 </body>
 </html>

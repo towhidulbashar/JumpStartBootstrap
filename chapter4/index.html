@@ -13,6 +13,37 @@
 		</style>
 	</head>
 	<body>
+		<div class="container">
+		<div>
+			<a href="#" class="disabled">Chapter 1: Up, Close, and Personal with Bootstrap</a>
+			<p>
+				This chapter contains introduction to Bootstrap and how to make a page ready to use Bootstrap.</p>
+		</div>
+		<div>
+			<a href="../chapter2/index.html">Chapter 2: Bootstrap Grid System</a>
+			<p>
+				Chapter two mainly focuses on how to build responsive grid layout.</p>
+		</div>
+		<div>
+			<a href="../chapter3/index.html">Chapter 3: Exploring Bootstrap Components</a>
+			<p>
+				In this chapter I've learn how to build page components that we use frequently in our html pages. I've learned how to play with 'standing out' components. And how to make 'form control' beautiful.</p>
+		</div>
+		<div>
+			<a href="index.html">Chapter 4: Bootstrap Plugins for Fun and Profit</a>
+			<p>
+				This chapter described how to add functionality to various components, and how to utilize different kind of events emitted by bootstrap plugins and controls.</p>
+		</div>
+		<div>
+			<a href="../chapter5/index.html">Chapter 5: Diving Deep: Customizing Bootstrap</a>
+			<p>
+				How to customized the bootstrap framework without changing the main CSS file.</p>
+		</div>
+		<div>
+			<a href="#" class="disabled">Chapter 6: Optimizing Bootstrap</a>
+			<p>
+				How to use some techniques (e.g., minification) improve the performance.</p>
+		</div>
 		<!--DROPDOWN-->
 		<div class="container">	
 			<ul class="nav nav-pills">
@@ -230,10 +261,14 @@
 			</div>
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Show Modal</button>
 		</div>
+		</div>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
+				$('.disabled').on('click', function(e){
+					e.preventDefault(); 
+				});
 				//Dropdowns with JavaScript
 				$('#myDropdownHandle').dropdown('toggle');
 				$('#myDropdown').on('show.bs.dropdown', function() {
